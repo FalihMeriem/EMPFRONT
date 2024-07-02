@@ -1,0 +1,194 @@
+.custom-dialog-class {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0%;
+}
+
+.mat-dialog-container {
+  background-color: #a1a5ee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.content {
+  /* position: relative;*/
+
+  // width: calc(100% - 280px);
+  // left: 280px;
+  position: relative;
+  transition: 0.3s ease;
+  z-index: 800;
+}
+
+.content {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 97%;
+  background-color: #e5f6fe;
+  border-radius: 15px;
+  margin: 50px 20px 20px 10px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+thead {
+  padding: 20px;
+}
+.users {
+  background-color: #e5f6fe;
+}
+
+th {
+  font-size: 13px;
+
+  padding: 5px 10px 5px 10px;
+}
+.table-top {
+  color: #1f3059;
+  border-bottom: 1px dotted #ffffff;
+}
+.table-top th {
+  color: #ffffff;
+  background-color: #ffbf00;
+}
+
+.border-right {
+  border-radius: 0px 10px 0px 0px;
+}
+.border-left {
+  border-radius: 10px 0px 0px 0px;
+}
+
+.userid {
+  color: #1f3059;
+  /*border-top: 1px solid #525050;*/
+}
+
+td {
+  font-size: 12px;
+  color: #373535;
+  padding: 5px 10px 5px 10px;
+  /* border-top: 1px solid #525050;*/
+}
+
+.page-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page-title {
+  /*padding-bottom: 30px;*/
+
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px !important;
+  margin-top: 5px;
+  color: #ffbf00;
+}
+
+.adduserbtn {
+  background-color: #ffbf00 !important;
+  border-radius: 13px;
+  padding: 8px 12px;
+  color: #ffffff;
+  border: 0px;
+  font-size: 13px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+  margin-right: 0%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.updateuserbtn {
+  background-color: #e5f6fe !important;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: #1f3059;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 100;
+  border: none;
+}
+.deleteuserbtn {
+  background-color: #e5f6fe !important;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: #ff0000;
+  border: none;
+
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+.userinfobtn {
+  background-color: #e5f6fe !important;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: #ffbf00;
+  border: none;
+
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+
+.ruleinfobtn {
+  background-color: #e5f6fe !important;
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: #ffbf00;
+  border: none;
+
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+label {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #1f3059;
+}
+
+.search-input {
+  border-radius: 13px;
+  padding: 7px 12px;
+
+  border: 0px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+
+  width: 100%;
+  /*border: 0.3px solid #1F3059;*/
+  /* border-radius: 10px;*/
+
+  color: #1f3059;
+  background-color: #e6ecf7;
+}

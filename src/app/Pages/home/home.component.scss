@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+* {
+  /*box-sizing: border-box;*/
+  box-sizing: content-box;
+}
+a {
+  text-decoration: none;
+}
+.home {
+  display: block;
+  background-color: #ffffff;
+}
+.home1 {
+  padding: 150px 150px 100px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home2 {
+  height: 100%;
+  background-image: url("/assets/Images/Blue Shape.png"); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home2-elements {
+  padding: 100px 150px 100px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal !important;
+}
+.home2-elements .small2 {
+  font-family: "Montserrat";
+  font-weight: 550;
+  font-size: 30px;
+  color: #ffbf00;
+}
+
+.home3 .Services {
+  font-family: "Montserrat";
+  font-weight: 550;
+  font-size: 30px;
+  color: #ffbf00;
+  margin: 0px 40px;
+}
+.home2-elements .big2 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 64px;
+
+  color: #1f3059;
+}
+
+.big {
+  width: 585px;
+  height: 176px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 88px;
+
+  color: #1f3059;
+}
+.small {
+  width: 544px;
+  height: 49px;
+  font-family: "Montserrat";
+  font-weight: 550;
+  font-size: 36px;
+  line-height: 49px;
+  color: #ffbf00;
+}
+.bouton {
+  background-color: #1f3059 !important;
+  border-radius: 17px;
+  padding: 10px 15px;
+  color: #ffffff;
+  border: 0px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  margin-top: 6%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}
+
+.player img {
+  width: 400px;
+  height: 400px;
+  /*max-width: 100%;
+    max-height: 100%;*/
+}
+.player2 img {
+  width: 450px;
+  height: 450px;
+  /*max-width: 100%;
+    max-height: 100%;*/
+}
+.emp {
+  display: inline-flex;
+  align-items: flex-start;
+}
+.fraud {
+  height: 80px;
+  width: 80px;
+}
+
+.custom-shape {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/Images/Blue Shape.png"); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about {
+  width: 544px;
+  height: 49px;
+  font-family: "Montserrat";
+  font-weight: 550;
+  font-size: 15px;
+
+ // color: #ffbf00;
+}
+
+.home3 {
+  padding: 150px 150px 100px 200px;
+  align-items: center;
+}
+.cards {
+  /* padding: 100px 100px;*/
+  display: flex;
+  justify-content: space-around;
+}
+.article {
+  margin: 20px 40px;
+  justify-content: center;
+  display: block;
+  width: 281px;
+  height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 2%;
+}
+
+#a1 {
+  background: #e5f6fe;
+}
+#a2 {
+  background: #e5f6fe;
+}
+#a3 {
+  background: #e5f6fe;
+}
+
+.title {
+  text-align: center;
+  align-items: center;
+  width: 140px;
+  height: 51px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Montserrat";
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-weight: medium;
+}
+#t1 {
+  background: #ffbf00;
+}
+#t2 {
+  background: #ffbf00;
+}
+#t3 {
+  background: #ffbf00;
+}
+.hdra {
+  color: #1f3059;
+  font-family: "Montserrat";
+  font-weight: 120;
+  font-size: 15px;
+  text-align: justify;
+  background: none;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  /*home1*/
+  .home1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .player img {
+    width: 200Px;
+    height: 200px;
+  }
+  .big {
+    width: 585px;
+    height: 176px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 88px;
+    color: #1f3059;
+  }
+  .small {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 49px;
+    float: left;
+  }
+  /*home2*/
+
+  .home2-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .player2 img {
+    width: 300px;
+    height: 300px;
+    /*max-width: 100%;
+        max-height: 100%;*/
+  }
+  .home2 .custom-shape {
+    justify-content: center;
+  }
+  .home2 {
+    height: 100%;
+    background-color: #e5f6fe;
+    /* background-image: url('/assets/Images/Blue Shape.png'); /* Replace with the path to your image */
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /*home3*/
+
+  .home3 {
+    display: block;
+    align-items: center;
+    align-content: center;
+    padding-left: 30%;
+  }
+  .article {
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+}

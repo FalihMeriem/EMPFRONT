@@ -1,0 +1,52 @@
+
+<div class="content">
+    <div class="container">
+
+    <div class="page-title">Employees List</div>
+    <div class="page-top" >
+        
+        <div class="search-bar">
+            <input type="text" id="search" [(ngModel)]="searchTerm" (input)="onSearch()" class="search-input">
+            <label for="search"><i class="fas fa-search"></i></label>
+        </div>
+        
+
+        <button class="adduserbtn" routerLink="/AddEmployee"> Add Employee</button>
+    </div>
+
+
+  
+<table class="users">
+    <thead>
+        <tr class="table-top">
+            <th class="border-left" >Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th class="border-right">Actions</th>
+        </tr>
+         <tr *ngFor="let user of filteredEmployees">
+            <th class="userid" scope="row">{{user.id}}</th>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.position}}</td>
+            <td>{{user.department}}</td>
+            <td class="actions">
+                <button class="action updateuserbtn" routerLink="/UpdateEmployee/{{user.id}}"><i class="fa-solid fa-solid fa-pen"></i></button>
+                <button class="action deleteuserbtn" (click)="deleteEmployee(user.id)"><i class="fa-solid fa-trash"></i></button>
+            </td>
+        </tr>
+        
+       
+    </thead>
+</table>
+</div>
+</div>
+
+  
+  

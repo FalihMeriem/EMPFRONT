@@ -1,0 +1,57 @@
+<div class="login">
+    <div class="loginpic">
+        <img src="../../assets/Images/Computer4.png">
+    </div>
+        
+    <form class="register-form" [formGroup]="addEmployeeForm" #registerForm="ngForm" (ngSubmit)="addEmployee()">
+        
+        <div class="form-title"> Add Employee</div>
+        <div class="error-message" *ngIf="showSuccessMessage" class="alert alert-success fade-out" role="alert">
+          {{successMessage}}
+        </div>
+        <div class="error-message" *ngIf="showErrorMessage" class="alert alert-danger fade-out" role="alert">
+            {{errorMessage}}
+        </div>     
+     
+        <div class="attributes-first-parent">
+            <div class="attributes-first">          
+                <div class="register-field">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="name" placeholder="Enter the firstname" class="form-control" formControlName="firstName" required>
+                </div>
+                <div class="register-field">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="email" placeholder="Enter the lastname" class="form-control" formControlName="lastName" required>
+                </div>
+
+                <div class="register-field">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" name="phoneNumber" placeholder="Enter the phone number" class="form-control" formControlName="phoneNumber" required>
+                </div>
+            </div>
+            <div class="attributes-first">
+            
+                <div class="register-field">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Enter the email" class="form-control" formControlName="email" required>
+                </div>
+                
+                <div class="register-field">
+                    <label for="position">Position</label>
+                    <input type="text" name="position" placeholder="Enter the position" class="form-control" formControlName="position" required>
+                </div> 
+                <div class="register-field">
+                    <label for="department">Department:</label>
+                    <input type="text" name="department" placeholder="Enter the department" class="form-control" formControlName="department" required>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <p><button type="submit" class="submit-button" [disabled]="!registerForm.valid">Add</button></p>
+            <p class="submit-button"><a routerLink="/Employees" routerLinkActive="active" ariaCurrentWhenActive="page">Cancel</a></p>
+        </div>
+        
+    </form>
+</div>
+<router-outlet></router-outlet>
